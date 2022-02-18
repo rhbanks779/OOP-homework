@@ -24,7 +24,7 @@ public class Students extends Person {
 			Scanner scan = new Scanner(System.in);
 			major= scan.next();
 		}
-		catch(Exception e) {
+		catch(NumberFormatException e) {
 			System.out.println("Only enter a major!");
 		}
 		try {
@@ -32,7 +32,7 @@ public class Students extends Person {
 			Scanner scan = new Scanner(System.in);
 			grade1= scan.nextDouble();
 		}
-		catch(Exception e) {
+		catch(NumberFormatException e) {
 			System.out.println("Only enter a number!");
 		}
 		

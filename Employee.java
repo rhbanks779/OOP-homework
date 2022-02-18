@@ -21,7 +21,7 @@ public class Employee extends Person {
 			Scanner scan = new Scanner(System.in);
 			id = scan.nextInt();
 		}
-		catch(Exception e) {
+		catch(NumberFormatException e) {
 			System.out.println("Only enter a number!");
 		}
 		
